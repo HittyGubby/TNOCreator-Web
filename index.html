@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>TNO Creator</title>
+</head>
+<body>
+    <div class="pic-container">
+        <div class="asset-pic country-flag-pic-container"><img id="country-flag-pic"></div>
+        <div class="asset-pic country-flag-pic-overlay-container"><img id="country-flag-pic-overlay"></div>
+        <div class="asset-pic country-leader-pic-container"><img id="country-leader-pic"></div>
+        <div class="asset-pic ideology-icon-pic-container"><img id="ideology-icon-pic"></div>
+        <div class="asset-pic national-focus-icon-pic-container"><img id="national-focus-icon-pic"></div>
+        <div class="asset-pic news-pic-container"><img id="news-pic"></div>
+        <div class="asset-pic super-event-pic-container"><img id="super-event-pic"></div>
+        <div class="template-pic-container"><img src="template/template.png" id="template-pic" width="1148"></div>
+        <p class="political-window-label country-info-label" id="country-name-label"></p>
+        <p class="political-window-label country-info-label" id="faction-name-label"></p>
+        <p class="political-window-label country-info-label" id="leader-name-label"></p>
+        <p class="political-window-label" id="party-name-label"></p>
+        <p class="political-window-label" id="ideology-name-label"></p>
+        <p class="political-window-label" id="next-election-label"></p>
+        <p class="political-window-label" id="national-focus-name-label"></p>
+        <p class="world-news-popup-label" id="news-title-label"></p>
+        <p class="world-news-popup-label" id="news-description-label"></p>
+        <p class="world-news-popup-label" id="news-button-label"></p>
+        <p id="super-event-title-label"></p>
+        <p id="super-event-description-label"></p>
+        <p id="super-event-button-label"></p>
+    </div>
+    <button id="test-button">Test</button>
+    <h2>Political Window</h2>
+    <table>
+        <tr>
+            <td>Country Flag (82x52):</td>
+            <td><input type="file" id="country-flag-input" accept="image/jpeg, image/png"></td>
+        </tr>
+        <tr>
+            <td>Leader Portrait (156x210):</td>
+            <td><input type="file" id="country-leader-input" accept="image/jpeg, image/png"></td>
+        </tr>
+        <tr>
+            <td>Ideology Icon (68x68):</td>
+            <td><input type="file" id="ideology-icon-input" accept="image/jpeg, image/png"></td>
+        </tr>
+        <tr>
+            <td>National Focus Icon (94x76):</td>
+            <td><input type="file" id="national-focus-icon-input" accept="image/jpeg, image/png"></td>
+        </tr>
+        <tr>
+            <td>Party Popularity:</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Country Name:</td>
+            <td><input type="text" id="country-name-input"></input></td>
+        </tr>
+        <tr>
+            <td>Faction Name:</td>
+            <td><input type="text" id="faction-name-input"></input></td>
+        </tr>
+        <tr>
+            <td>Leader Name:</td>
+            <td><input type="text" id="leader-name-input"></input></td>
+        </tr>
+        <tr>
+            <td>Party Name:</td>
+            <td><input type="text" id="party-name-input"></input></td>
+        </tr>
+        <tr>
+            <td>Ideology Name:</td>
+            <td><input type="text" id="ideology-name-input"></input></td>
+        </tr>
+        <tr>
+            <td>Next Election:</td>
+            <td><input type="text" id="next-election-input"></input></td>
+        </tr>
+        <tr>
+            <td>National Focus Name:</td>
+            <td><input type="text" id="national-focus-name-input"></input></td>
+        </tr>
+    </table>
+
+    <h2>World News Popup</h2>
+    <table>
+        <tr>
+            <td>Picture (161x420):</td>
+            <td><input type="file" id="news-input" accept="image/jpeg, image/png"></td>
+        </tr>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" id="news-title-input"></input></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><textarea id="news-description-input"></textarea></td>
+        </tr>
+        <tr>
+            <td>Button Text:</td>
+            <td><input type="text" id="news-button-input"></input></td>
+        </tr>
+    </table>
+
+    <h2>Super Event Popup</h2>
+    <table>
+        <tr>
+            <td>Picture (573x455):</td>
+            <td><input type="file" id="super-event-input" accept="image/jpeg, image/png"></td>
+        </tr>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" id="super-event-title-input"></input></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><textarea id="super-event-description-input"></textarea></td>
+        </tr>
+        <tr>
+            <td>Button Text:</td>
+            <td><input type="text" id="super-event-button-input"></input></td>
+        </tr>
+    </table>
+</body>
+</html>

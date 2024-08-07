@@ -1,0 +1,203 @@
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('fonts/Aldrich-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Bombardier';
+    src: url('./fonts/BOMBARD_.ttf');
+}
+
+@font-face {
+    font-family: 'a_OldTyperNr';
+    src: url('./fonts/OldTyperNr.ttf');
+}
+
+@font-face {
+    font-family: 'FZRuiZhengHeiS-R-GB';
+    src: url('./fonts/FZRuiZHJW.ttf');
+}
+
+.pic-container {
+    position: relative;
+    background-color: black;
+    white-space: nowrap;
+    width: 1148px;
+}
+
+.asset-pic {
+    display: flex;
+    position: absolute;
+}
+
+.country-flag-pic-container {
+    top: 7px;
+    left: 22px;
+    z-index: 1;
+}
+
+#country-flag-pic
+{
+    width: 82px;
+    height: 52px;
+    z-index: 1;
+}
+
+.country-flag-pic-overlay-container{
+    top: 7px;
+    left: 22px;
+    z-index: 2;
+}
+
+#country-flag-pic-overlay
+{
+    width: 82px;
+    height: 52px;
+    z-index: 2;
+}
+
+.country-leader-pic-container {
+    top: 70px;
+    left: 2px;
+    z-index: 1;
+}
+
+#country-leader-pic {
+    width: 120px;
+    height: 159px;
+}
+
+.ideology-icon-pic-container {
+    top: 2px;
+    left: 140px;
+    z-index: 3;
+}
+
+#ideology-icon-pic {
+    width: 68px;
+    height: 68px;
+}
+
+.national-focus-icon-pic-container {
+    top: 157px;
+    left: 130px;
+    z-index: 3;
+}
+
+#national-focus-icon-pic {
+    width: 88px;
+    height: 70px;
+}
+
+#news-pic {
+    width: 134px;
+    height: 391px;
+}
+
+.news-pic-container {
+    top: 343px;
+    left: 104px;
+    z-index: 1;
+}
+
+#super-event-pic {
+    width: 620px;
+    height: 493px;
+}
+
+.super-event-pic-container {
+    top: 54px;
+    left: 522px;
+    z-index: 1;
+}
+
+.template-pic-container {
+    z-index: 0;
+    position: relative;
+}
+
+.political-window-label {
+    color: darkgray;
+    font-family: 'Aldrich', 'FZRuiZhengHeiS-R-GB';
+    z-index: 3;
+}
+
+.country-info-label {
+    color: white;
+    font-family: 'Aldrich', 'FZRuiZhengHeiS-R-GB';
+    z-index: 3;
+}
+
+#national-focus-name-label {
+    width: 271px;
+    size: 22;
+    text-align: center;
+    white-space: pre-wrap;
+    font-family: 'Aldrich', 'FZRuiZhengHeiS-R-GB';
+    z-index: 3;
+}
+
+.world-news-popup-label {
+    color: black;
+    font-family: 'a_OldTyperNr', 'FZRuiZhengHeiS-R-GB';
+    z-index: 3;
+}
+
+#news-title-label {
+    text-align: center;
+    font-family: 'a_OldTyperNr', 'FZRuiZhengHeiS-R-GB';
+    width: 390px;
+    color: rgb(0, 0, 0);
+    white-space: pre-wrap;
+}
+
+#news-description-label {
+    width: 260px;
+    color: #000;
+    font-family: 'a_OldTyperNr', 'FZRuiZhengHeiS-R-GB';
+    white-space: pre-wrap;
+}
+
+#news-button-label {
+    text-align: center;
+    width: 275px;
+    color: #000;
+    font-family: 'a_OldTyperNr', 'FZRuiZhengHeiS-R-GB';
+    white-space: pre-wrap;
+}
+
+#super-event-title-label {
+    color: darkgray;
+    font-family: 'Aldrich', 'FZRuiZhengHeiS-R-GB';
+    text-align: center;
+    width: 606px;
+    white-space: pre-wrap;
+    z-index: 3;
+}
+
+#super-event-description-label {
+    color: white;
+    font-family: 'Bombardier','FZRuiZhengHeiS-R-GB';
+    text-align: right;
+    width: 540px;
+    white-space: pre-wrap;
+    text-shadow:2px 2px 0 #000, -2px -2px 0 #000,
+                -2px 2px 0 #000, 2px -2px 0 #000,
+                0px 2px 0 #000,  0-2px 0 #000,
+                -2px 0 0 #000, 2px 0 0 #000;
+    z-index: 3;
+}
+
+#super-event-button-label {
+    color: white;
+    font-family: 'Bombardier','FZRuiZhengHeiS-R-GB';
+    text-align: center;
+    width: 225px;
+    white-space: pre-wrap;
+    text-shadow:2px 2px 0 #000, -2px -2px 0 #000,
+                -2px 2px 0 #000, 2px -2px 0 #000,
+                0px 2px 0 #000,  0-2px 0 #000,
+                -2px 0 0 #000, 2px 0 0 #000;
+    z-index: 3;
+}
