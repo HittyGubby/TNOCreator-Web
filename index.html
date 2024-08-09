@@ -15,11 +15,11 @@
     <title>TNO Creator</title>
 </head>
 <body bgcolor="#333333">
-<div style="display: flex; flex-direction: row;">
+<div style="display: flex; flex-direction: row;" onload="loaddefault()">
     <div>
         <img src="template/diplo_leader_frame.png" style="position: relative;z-index: 1;">
         <div style="position:absolute; top: 22px; left: 30px; height: 52px; width: 90px; z-index: 2;">
-           <img id="flagoverlay" src="template/flag_overlay.png" style="position:absolute; top:0; left:0;z-index: 1;height: inherit; width: inherit;">
+           <img src="template/flag_overlay.png" style="position:absolute; top:0; left:0;z-index: 1;height: inherit; width: inherit;">
            <img id="flag" src="flags/GER.png" style="position:absolute; top:0; left:0; z-index: 0; height: inherit; width: inherit;">
         </div>
         <div style="position:absolute; top: 85px; left: 15px; height: 160px; width: 120px; z-index: 0;">
@@ -29,17 +29,34 @@
     <div style="display: flex;flex-direction: row; flex-wrap: nowrap;">
         <img src="template/diplo_upper_win_bg.png" style="position: relative;z-index: 2;margin-left: -10px;">
         <div style="position:absolute; top: 48px; left: 185px; z-index: 3;display: flex; justify-content: center; align-items: center;" >
-            <img id="ideology" src="ideologies/national socialism.png" style="position:absolute;scale: 0.6;">
+            <img id="ideologypic" src="ideologies/national socialism.png" style="position:absolute;scale: 0.6;">
         </div>
-        <div style="position: absolute; left: 230px; inline-size: 1000px;">
-        <p id="countryname" style="font-family:Bombardier,FZRui; font-size: 20px; position: absolute; z-index: 3; top: -8px;">German Reich</p>
-        <p id="factionname" style="font-family:Bombardier,FZRui; font-size: 20px; position: absolute; z-index: 3; top: 11px;">Enheitspakt</p>
-        <p id="leadername" style="font-family:Bombardier,FZRui; font-size: 20px; position: absolute; z-index: 3; top: 30px">Reichstag Emergency Council</p>
+        <div style="position:absolute; top: 230px; left: 385px; z-index: 3;display: flex; justify-content: center; align-items: center;" >
+            <img src="template/pol_goal_progress_frame.png" style="position:absolute;">
+            <img src="template/diplo_goal_button.png" style="position:absolute; top: -50px;">
+        </div>
+        <div style="position:absolute; top: 227px; left: 268px; z-index: 3;" >
+            <img id="progressbar" src="template/pol_goal_progress.png" style="position:absolute; width: 0px;height: 6px;">
         </div>
         <div style="position:absolute; top: 205px; left: 187px; z-index: 3;display: flex; justify-content: center; align-items: center;" >
             <img id="ideology" src="focus_icons/goal_unknown.png" style="position:absolute;scale: 0.8;">
         </div>
+        <div style="position: absolute; left: 230px; inline-size: 1000px;">
+        <p id="country" style="font-family:Bombardier,FZWen; font-size: 20px; color:#cccccc; position: absolute; z-index: 3; top: -8px;">German Reich</p>
+        <p id="faction" style="font-family:Bombardier,FZWen; font-size: 20px; color:#cccccc; position: absolute; z-index: 3; top: 11px;">Enheitspakt</p>
+        <p id="leader" style="font-family:Bombardier,FZWen; font-size: 20px; color:#cccccc; position: absolute; z-index: 3; top: 30px">Reichstag Emergency Council</p>
+        </div>
+        <div style="position: absolute; top:93px;left: 247px; inline-size: 1000px;">
+        <p id="party" style="font-family:Aldrich,FZRui; font-size: 21px; color:#7caaaa; position: absolute; z-index: 3; top: -8px;">NSDAP</p>
+        <p id="ideology" style="font-family:Aldrich,FZRui; font-size: 21px; color:#7caaaa; position: absolute; z-index: 3; top: 17px;">National Socialism</p>
+        <p id="election" style="font-family:Aldrich,FZRui; font-size: 21px; color:#7caaaa; position: absolute; z-index: 3; top: 42px">No Elections</p>
+        <div style="position:absolute; inline-size: 1000px; z-index: 3;display: flex; left: -360px; top:115px; justify-content: center; align-items: center;" >
+        <p id="focus" style="font-family:Aldrich,FZRui; font-size: 21px; color:#7caaaa; position: absolute; z-index: 3;">The Reich's Legacy</p>
+        </div>
+        </div>
     </div>
+</div>
+    
 </div>
 </body>
 </html>
