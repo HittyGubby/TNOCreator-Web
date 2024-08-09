@@ -31,6 +31,9 @@
         <div style="position:absolute; top: 48px; left: 185px; z-index: 3;display: flex; justify-content: center; align-items: center;" >
             <img id="ideologypic" src="ideologies/national socialism.png" style="position:absolute;scale: 0.6;">
         </div>
+        <div style="position:absolute; top: 48px; left: 500px; z-index: 3;display: flex; justify-content: center; align-items: center;" >
+            <img id="factionpic" src="factions/Leader-Einheitspakt.png" style="position:absolute;scale: 0.6;">
+        </div>
         <div style="position:absolute; top: 230px; left: 385px; z-index: 3;display: flex; justify-content: center; align-items: center;" >
             <img src="template/pol_goal_progress_frame.png" style="position:absolute;">
             <img src="template/diplo_goal_button.png" style="position:absolute; top: -50px;">
@@ -55,8 +58,32 @@
         </div>
         </div>
     </div>
-</div>
     
+</div>
+<div id="econ" style="position: absolute; left: 532px;top: 10px; z-index: 4;">
+        <img src="template/diplo_econ_bg.png" style="position: relative;z-index: 2;margin-left: 7px;">
+        <div style="position:relative; top: -40px; left: -280px; z-index: 3;display: flex; justify-content: center; align-items: center;" >
+            <img id="ideologypic" src="econ/GFX_Econ_Subtype_Gelenkte_Wirtschaft.png" style="position:absolute;">
+        </div>
+        <div style="cursor: move; position: relative; left: 20px; top: -78px; inline-size: 1000px;">
+        <p id="country" style="font-family:Bombardier,FZWen; font-size: 20px; color:#cccccc; position: absolute; z-index: 3;">Economy</p>
+        <p id="focus" style=" top: 27px; font-family:Aldrich,FZRui; font-size: 19px; color:#cccccc; position: absolute; z-index: 3;">Wirtschaft</p>
+        
+    </div>
+</div>
+
+<div id="desc" style=" position: absolute; left: 10px;top: 255px; z-index: 4; width: 300px; min-height: 50px;  outline: 1px solid #7caaaa; background-color: #000c13;">
+    <div id="header" style="margin: 7px; font-family:Aldrich,FZRui; font-size: 12px; line-height: 15px; color:#cccccc; position: absolute; z-index: 3; width: 286px;word-wrap:break-word">
+        <div>
+        <span id="leaderdesc" style="color:#cccc00"></span>
+        <span style="color:#cccccc">,leader of</span>
+        <span id="countrydesc" style="color:#cccc00"></span>
+        <div style=" margin: -20px; position:absolute; z-index: 3;display: inline; justify-content: center; align-items: center;" >
+            <img id="flag" src="flags/GER.png" style=" margin: 0 -10px; scale: 0.2;">
+        </div>
+        <p style="margin-top: -3px;">------------------------------------------------------------</p>
+        </div>
+        ---------------
 </div>
 </body>
 </html>
